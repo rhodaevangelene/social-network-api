@@ -79,6 +79,7 @@ const thoughtController = {
                 if (!deletedThought) {
                     return res.status(404).json({ message: 'No thought with this id!' });
                 }
+                res.json({});
             })
             .catch(err => res.json(err));
     },
